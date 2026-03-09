@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>Preguntas Frecuentes · Inversiones V&D</title>
-    <meta name="description" content="Resolvemos tus dudas sobre reparación de celulares, páginas web, asesoría financiera y más en Santo Domingo.">
-    <meta name="keywords" content="FAQ, preguntas frecuentes, reparación celular, garantía, páginas web, contacto">
+    <title>Productos en Venta · Inversiones V&D</title>
+    <meta name="description" content="Explora nuestros productos tecnológicos: memorias USB, cables, cargadores, laptops, repuestos y más en Santo Domingo.">
+    <meta name="keywords" content="productos tecnológicos, memorias USB, cables VGA, cargadores, laptops, repuestos, Santo Domingo">
     <meta name="author" content="Inversiones VD">
     <meta name="robots" content="index, follow">
     <meta name="geo.region" content="DO-01">
     <meta name="geo.placename" content="Cristo Rey, Santo Domingo">
-    <meta property="og:title" content="FAQ · Inversiones V&D">
-    <meta property="og:description" content="Respuestas a tus preguntas sobre servicios tecnológicos en Santo Domingo.">
+    <meta property="og:title" content="Productos en Venta · Inversiones V&D">
+    <meta property="og:description" content="Compra productos tecnológicos con garantía y precios competitivos en Santo Domingo.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_DO">
     <meta name="contact" content="+1 829 779 1248">
@@ -254,7 +254,7 @@
             transform: translateY(-2px);
         }
 
-        /* ===== HERO ESPECÍFICO PARA FAQ ===== */
+        /* ===== HERO ESPECÍFICO PARA PRODUCTOS ===== */
         .hero {
             min-height: 40vh;
             display: flex;
@@ -297,7 +297,7 @@
 
         /* ===== CONTAINER ===== */
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 3rem 1.5rem;
             position: relative;
@@ -308,7 +308,7 @@
         h2 {
             font-size: clamp(2rem, 5vw, 2.8rem);
             font-family: 'Times New Roman', Times, serif;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
             position: relative;
             display: inline-block;
             color: #fff;
@@ -331,76 +331,120 @@
             width: 150px;
         }
 
-        /* ===== GRID DE PREGUNTAS FRECUENTES ===== */
-        .faq-grid {
+        /* ===== GRID DE PRODUCTOS ===== */
+        .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
             gap: 2rem;
             margin: 3rem 0;
         }
 
-        .faq-card {
+        .product-card {
             background: #1a1a1a;
             border: 1px solid #333;
-            border-radius: 20px;
-            padding: 2rem 1.8rem;
+            border-radius: 24px;
+            padding: 1.8rem;
             transition: all 0.4s ease;
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
             opacity: 0;
             animation: cardAppear 0.8s forwards;
-            animation-delay: calc(0.1s * var(--i));
+            animation-delay: calc(0.08s * var(--i));
+            display: flex;
+            flex-direction: column;
         }
 
-        .faq-card:hover {
+        .product-card:hover {
             transform: translateY(-8px);
             border-color: #666;
             box-shadow: 0 25px 40px rgba(0, 0, 0, 0.6);
             background: #202020;
         }
 
-        .faq-icon {
-            width: 60px;
-            height: 60px;
+        /* Espacio para imagen del producto */
+        .product-image {
+            width: 100%;
+            height: 200px;
             background: #2a2a2a;
-            border-radius: 50%;
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-            color: #fff;
             border: 1px solid #444;
             transition: all 0.3s;
+            overflow: hidden;
         }
 
-        .faq-card:hover .faq-icon {
-            background: #333;
-            border-color: #777;
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover .product-image img {
             transform: scale(1.05);
         }
 
-        .faq-card h3 {
-            font-size: 1.6rem;
-            font-family: 'Times New Roman', Times, serif;
-            margin-bottom: 1rem;
-            color: #fff;
-            font-weight: 600;
-            border-bottom: 1px solid #333;
-            padding-bottom: 0.8rem;
+        .product-card:hover .product-image {
+            border-color: #777;
         }
 
-        .faq-card p {
-            color: #b0b0b0;
-            font-size: 1.1rem;
-            line-height: 1.7;
+        .product-card h3 {
+            font-size: 1.4rem;
             font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 0.8rem;
+            color: #fff;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .product-description {
+            color: #b0b0b0;
+            font-size: 1rem;
+            margin-bottom: 1.2rem;
+            flex-grow: 1;
+        }
+
+        .product-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 1rem;
+            border-top: 1px solid #333;
+            padding-top: 1rem;
+        }
+
+        .product-price small {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #999;
+        }
+
+        .product-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.3s;
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+
+        .product-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
         }
 
         /* ===== CONTACTO RÁPIDO ===== */
         .quick-contact {
             text-align: center;
             margin: 4rem 0 2rem;
-            padding: 2.5rem;
+            padding: 3rem;
             background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?auto=compress&cs=tinysrgb&w=600');
             background-size: cover;
             border-radius: 30px;
@@ -596,7 +640,7 @@
                 padding: 2.5rem 1rem;
             }
 
-            .faq-grid {
+            .products-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -628,12 +672,12 @@
                 font-size: 1rem;
             }
 
-            .faq-card {
-                padding: 1.5rem;
+            .product-image {
+                height: 180px;
             }
 
-            .faq-card h3 {
-                font-size: 1.4rem;
+            .product-price {
+                font-size: 1.5rem;
             }
 
             .quick-contact h3 {
@@ -657,7 +701,7 @@
 <body>
     <!-- SPLASH CINEMATOGRÁFICO CON SUBRAYADO -->
     <div class="splash-screen">
-        <div class="splash-title">FAQ</div>
+        <div class="splash-title">PRODUCTOS</div>
     </div>
 
     <!-- CONTENIDO PRINCIPAL -->
@@ -689,83 +733,181 @@
             </nav>
         </header>
 
-        <!-- HERO DE FAQ -->
+        <!-- HERO DE PRODUCTOS -->
         <section class="hero">
             <div class="hero-content">
-                <h1>Preguntas Frecuentes</h1>
-                <p>Resolvemos todas tus dudas sobre nuestros servicios</p>
+                <h1>Productos en Venta</h1>
+                <p>Tecnología, accesorios y repuestos con los mejores precios</p>
             </div>
         </section>
 
         <main class="container">
-            <!-- GRID DE PREGUNTAS FRECUENTES -->
-            <div class="faq-grid">
-                <!-- Pregunta 1 -->
-                <div class="faq-card" style="--i:1;">
-                    <div class="faq-icon">❓</div>
-                    <h3>¿Qué servicios ofrecen?</h3>
-                    <p>Ofrecemos reparación de celulares y computadoras, creación de páginas web, diseño de logos, asesoría financiera, compra y venta de productos y más.</p>
+            <!-- GRID DE PRODUCTOS CON IMÁGENES DESDE CARPETA FOTOS-PRODUCTOS -->
+            <div class="products-grid">
+                <!-- Producto 1: Memorias SanDisk USB 3.0 -->
+                <div class="product-card" style="--i:1;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen1-memoria-sandisk.jpg" alt="Memoria SanDisk USB 3.0" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>💾</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Memorias SanDisk USB 3.0</h3>
+                    <div class="product-description">Alta velocidad, transmisión rápida de datos, ideal para archivos pesados.</div>
+                    <div class="product-price">Consultar <small>precio</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20la%20Memoria%20SanDisk%20USB%203.0" target="_blank" class="product-btn">Consultar disponibilidad</a>
                 </div>
 
-                <!-- Pregunta 2 -->
-                <div class="faq-card" style="--i:2;">
-                    <div class="faq-icon">📍</div>
-                    <h3>¿Dónde están ubicados?</h3>
-                    <p>Estamos en Cristo Rey, Santo Domingo. Puedes visitarnos o contactarnos para más información.</p>
+                <!-- Producto 2: Control de tv claro -->
+                <div class="product-card" style="--i:2;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen2-control-claro.jpg" alt="Control de tv claro" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>📺</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Control de tv claro</h3>
+                    <div class="product-description">Control remoto original para televisores Claro, funcionamiento garantizado.</div>
+                    <div class="product-price">RD$400 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20el%20Control%20de%20tv%20claro%20por%20RD%24400" target="_blank" class="product-btn">Comprar ahora</a>
                 </div>
 
-                <!-- Pregunta 3 -->
-                <div class="faq-card" style="--i:3;">
-                    <div class="faq-icon">📞</div>
-                    <h3>¿Cómo puedo contactarlos?</h3>
-                    <p>Puedes contactarnos al <strong>+1 (829) 779-1248</strong> o por Instagram <strong>@inversiones_vd_</strong>.</p>
+                <!-- Producto 3: Tarjeta de red laptop -->
+                <div class="product-card" style="--i:3;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen3-tarjeta-red-laptop.jpg" alt="Tarjeta de red laptop" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>📶</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Tarjeta de red laptop</h3>
+                    <div class="product-description">Soporta 5G, ideal para mejorar la conectividad de tu laptop. 150 c/u.</div>
+                    <div class="product-price">RD$150 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20la%20Tarjeta%20de%20red%20laptop%20por%20RD%24150" target="_blank" class="product-btn">Comprar ahora</a>
                 </div>
 
-                <!-- Pregunta 4 -->
-                <div class="faq-card" style="--i:4;">
-                    <div class="faq-icon">🔧</div>
-                    <h3>¿Ofrecen garantía en las reparaciones?</h3>
-                    <p>Sí, todas nuestras reparaciones incluyen garantía según el tipo de servicio realizado. Consulta términos al momento de la reparación.</p>
+                <!-- Producto 4: Cabezita de cargador -->
+                <div class="product-card" style="--i:4;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen4-cargadores-cabezita.jpg" alt="Cabezita de cargador" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>🔌</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Cabezita de cargador</h3>
+                    <div class="product-description">Adaptador de corriente para cargador, compatible con varios dispositivos. 100 c/u.</div>
+                    <div class="product-price">RD$100 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20la%20Cabezita%20de%20cargador%20por%20RD%24100" target="_blank" class="product-btn">Comprar ahora</a>
                 </div>
 
-                <!-- Pregunta 5 -->
-                <div class="faq-card" style="--i:5;">
-                    <div class="faq-icon">⏱️</div>
-                    <h3>¿Cuánto tarda una reparación?</h3>
-                    <p>Depende del problema del equipo, pero muchas reparaciones se realizan el mismo día. Te informaremos el tiempo estimado al diagnosticar.</p>
+                <!-- Producto 5: Cable VGA -->
+                <div class="product-card" style="--i:5;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen5-cable-vga.jpg" alt="Cable VGA" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>🖥️</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Cable VGA</h3>
+                    <div class="product-description">Cable de video para conectar monitor a computadora, imagen nítida.</div>
+                    <div class="product-price">RD$150 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20el%20Cable%20VGA%20por%20RD%24150" target="_blank" class="product-btn">Comprar ahora</a>
                 </div>
 
-                <!-- Pregunta 6 -->
-                <div class="faq-card" style="--i:6;">
-                    <div class="faq-icon">🌐</div>
-                    <h3>¿Hacen páginas web para negocios?</h3>
-                    <p>Sí, creamos páginas web modernas, rápidas y adaptadas a celulares y computadoras. Diseños personalizados para tu negocio.</p>
+                <!-- Producto 6: Cable de poder pc -->
+                <div class="product-card" style="--i:6;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen6-cable-pc.jpg" alt="Cable de poder pc" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>⚡</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Cable de poder pc</h3>
+                    <div class="product-description">Cable de alimentación para computadora de escritorio, estándar.</div>
+                    <div class="product-price">RD$150 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20el%20Cable%20de%20poder%20pc%20por%20RD%24150" target="_blank" class="product-btn">Comprar ahora</a>
                 </div>
 
-                <!-- Pregunta 7 -->
-                <div class="faq-card" style="--i:7;">
-                    <div class="faq-icon">📦</div>
-                    <h3>¿Venden productos tecnológicos?</h3>
-                    <p>Sí, ofrecemos distintos productos como accesorios, electrónicos y otros artículos. Pregunta por disponibilidad.</p>
+                <!-- Producto 7: Transmisor FM para carro -->
+                <div class="product-card" style="--i:7;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen7-transmisor.jpg" alt="Transmisor FM para carro" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>🚗</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Transmisor FM para carro</h3>
+                    <div class="product-description">Escucha música desde tu USB o tarjeta en el auto, manos libres.</div>
+                    <div class="product-price">RD$250 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20el%20Transmisor%20FM%20para%20carro%20por%20RD%24250" target="_blank" class="product-btn">Comprar ahora</a>
                 </div>
 
-                <!-- Pregunta 8 (extra para completar) -->
-                <div class="faq-card" style="--i:8;">
-                    <div class="faq-icon">💰</div>
-                    <h3>¿Cómo comprar dólares?</h3>
-                    <p>Ofrecemos compra y venta de dólares con tasas competitivas y total transparencia. Contáctanos para más información.</p>
+                <!-- Producto 8: Cable poder ps4 -->
+                <div class="product-card" style="--i:8;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen8-cable-de-poder-ps4.jpg" alt="Cable poder ps4" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>🎮</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Cable poder ps4</h3>
+                    <div class="product-description">Cable de alimentación para PlayStation 4, original y seguro.</div>
+                    <div class="product-price">RD$150 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20el%20Cable%20poder%20ps4%20por%20RD%24150" target="_blank" class="product-btn">Comprar ahora</a>
+                </div>
+
+                <!-- Producto 9: Cargador reloj inteligente smartwatch -->
+                <div class="product-card" style="--i:9;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen9-cargador-smartwacth.jpg" alt="Cargador smartwatch" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>⌚</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Cargador reloj inteligente smartwatch</h3>
+                    <div class="product-description">Cargador magnético para smartwatch, compatible con varias marcas.</div>
+                    <div class="product-price">RD$200 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20el%20Cargador%20reloj%20inteligente%20smartwatch%20por%20RD%24200" target="_blank" class="product-btn">Comprar ahora</a>
+                </div>
+
+                <!-- Producto 10: Mouse pad laptop del gobierno EASY TOUCH -->
+                <div class="product-card" style="--i:10;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen10-mouse-modulo.jpg" alt="Mouse pad EASY TOUCH" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>🖱️</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Mouse pad laptop EASY TOUCH</h3>
+                    <div class="product-description">Mouse pad oficial del gobierno, calidad superior. 250 c/u.</div>
+                    <div class="product-price">RD$250 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20el%20Mouse%20pad%20laptop%20EASY%20TOUCH%20por%20RD%24250" target="_blank" class="product-btn">Comprar ahora</a>
+                </div>
+
+                <!-- Producto 11: Pila de bios Laptop armadas -->
+                <div class="product-card" style="--i:11;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen11-pila-bios.jpg" alt="Pila de bios laptop" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>🔋</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Pila de bios Laptop armadas</h3>
+                    <div class="product-description">Batería para BIOS de laptop, lista para usar. 150 c/u.</div>
+                    <div class="product-price">RD$150 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20la%20Pila%20de%20bios%20Laptop%20armadas%20por%20RD%24150" target="_blank" class="product-btn">Comprar ahora</a>
+                </div>
+
+                <!-- Producto 12: M2 sata 128gb -->
+                <div class="product-card" style="--i:12;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen12-m2-sata.jpg" alt="M2 sata 128gb" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>💽</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>M2 sata 128gb</h3>
+                    <div class="product-description">Disco sólido M2 SATA, nítido, poco uso, ideal para mejorar rendimiento.</div>
+                    <div class="product-price">RD$500 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20el%20M2%20sata%20128gb%20por%20RD%24500" target="_blank" class="product-btn">Comprar ahora</a>
+                </div>
+
+                <!-- Producto 13: Acer para piezas o reparar -->
+                <div class="product-card" style="--i:13;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen13-laptop-acer.jpg" alt="Laptop Acer para piezas" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>💻</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Acer para piezas o reparar</h3>
+                    <div class="product-description">Sin RAM ni disco, teclado dañado, resto funcional. Pantalla 15.6 pulgadas. Ideal para reparar o repuestos.</div>
+                    <div class="product-price">RD$2,000 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20la%20Acer%20para%20piezas%20por%20RD%242000" target="_blank" class="product-btn">Comprar ahora</a>
+                </div>
+
+                <!-- Producto 14: Motherboard laptop del gobierno Placa madre -->
+                <div class="product-card" style="--i:14;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen14-laptop-motherboard-gobierno.jpg" alt="Motherboard laptop gobierno" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>🔧</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Motherboard laptop del gobierno</h3>
+                    <div class="product-description">Placa madre para laptop del gobierno, funcional, lista para usar.</div>
+                    <div class="product-price">RD$500 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20la%20Motherboard%20laptop%20del%20gobierno%20por%20RD%24500" target="_blank" class="product-btn">Comprar ahora</a>
                 </div>
             </div>
 
             <!-- CONTACTO RÁPIDO -->
             <div class="quick-contact">
-                <h3>¿No encuentras tu pregunta?</h3>
-                <p>Contáctanos directamente y te responderemos a la brevedad</p>
+                <h3>¿No encuentras lo que buscas?</h3>
+                <p>Pregunta por disponibilidad y otros productos que tenemos para ti</p>
                 <div class="contact-buttons">
                     <a href="tel:+18297791248" class="contact-btn">
                         <span>📞</span> Llamar ahora
                     </a>
-                    <a href="https://wa.me/18297791248" target="_blank" class="contact-btn">
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20quiero%20consultar%20por%20los%20productos%20que%20tienen%20disponibles" target="_blank" class="contact-btn">
                         <span>📱</span> WhatsApp
                     </a>
                     <a href="https://instagram.com/inversiones_vd_" target="_blank" class="contact-btn">
@@ -786,11 +928,10 @@
                     <h4>Enlaces</h4>
                     <ul>
                         <li><a href="inicio.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="productos.html">Productos en venta</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Productos en venta</a></li>
+                        <li><a href="nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -804,7 +945,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <span>© 2026 Inversiones V&D · 1 año de experiencia</span>
+                <span>© 2025 Inversiones V&D · 1 año de experiencia</span>
             </div>
         </footer>
     </div>

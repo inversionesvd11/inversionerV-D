@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>Contacto · Inversiones V&D</title>
-    <meta name="description" content="Contacta con Inversiones VD por teléfono, WhatsApp, Instagram o visítanos en Cristo Rey, Santo Domingo. Estamos para ayudarte.">
-    <meta name="keywords" content="contacto, teléfono, WhatsApp, Instagram, ubicación, Santo Domingo, Cristo Rey">
+    <title>Sobre Nosotros · Inversiones V&D</title>
+    <meta name="description" content="Conoce más sobre Inversiones VD: nuestra misión, visión, valores y servicios tecnológicos en Santo Domingo.">
+    <meta name="keywords" content="sobre nosotros, empresa tecnología, misión, visión, valores, Santo Domingo">
     <meta name="author" content="Inversiones VD">
     <meta name="robots" content="index, follow">
     <meta name="geo.region" content="DO-01">
     <meta name="geo.placename" content="Cristo Rey, Santo Domingo">
-    <meta property="og:title" content="Contacto · Inversiones V&D">
-    <meta property="og:description" content="Comunícate con nosotros por teléfono, WhatsApp o Instagram. Estamos en Cristo Rey, Santo Domingo.">
+    <meta property="og:title" content="Sobre Nosotros · Inversiones V&D">
+    <meta property="og:description" content="Conoce nuestra misión, visión, valores y compromiso con la calidad en servicios tecnológicos.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_DO">
     <meta name="contact" content="+1 829 779 1248">
@@ -254,7 +254,7 @@
             transform: translateY(-2px);
         }
 
-        /* ===== HERO ESPECÍFICO PARA CONTACTO ===== */
+        /* ===== HERO ESPECÍFICO PARA SOBRE NOSOTROS ===== */
         .hero {
             min-height: 40vh;
             display: flex;
@@ -297,7 +297,7 @@
 
         /* ===== CONTAINER ===== */
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 3rem 1.5rem;
             position: relative;
@@ -331,149 +331,205 @@
             width: 150px;
         }
 
-        /* ===== SECCIÓN DE CONTACTO ===== */
-        .contact-section {
+        /* ===== SECCIÓN SOBRE NOSOTROS MEJORADA ===== */
+        .about-intro {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 3rem;
-            margin: 3rem 0;
+            margin-bottom: 4rem;
+            align-items: center;
         }
 
-        .contact-info {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 30px;
-            padding: 2.5rem;
-            transition: all 0.3s;
+        .about-text {
             opacity: 0;
             animation: fadeUp 1s 0.2s forwards;
         }
 
-        .contact-info:hover {
-            border-color: #666;
-            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
-        }
-
-        .contact-info p {
+        .about-text p {
             font-size: 1.2rem;
             color: #e0e0e0;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             line-height: 1.8;
         }
 
-        .contact-detail {
+        .about-image {
+            width: 100%;
+            height: 350px;
+            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+            border-radius: 25px;
             display: flex;
             align-items: center;
-            gap: 1.2rem;
-            padding: 1rem 0;
-            border-bottom: 1px solid #333;
+            justify-content: center;
+            border: 1px solid #333;
+            opacity: 0;
+            animation: fadeUp 1s 0.3s forwards;
+            overflow: hidden;
         }
 
-        .contact-detail:last-child {
-            border-bottom: none;
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+            transition: opacity 0.3s;
         }
 
-        .contact-icon {
-            width: 50px;
-            height: 50px;
+        .about-image:hover img {
+            opacity: 0.8;
+        }
+
+        /* ===== MISIÓN, VISIÓN, VALORES ===== */
+        .mission-vision {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .mission-card, .vision-card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 25px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            animation: cardAppear 0.8s forwards;
+            animation-delay: calc(0.1s * var(--i));
+        }
+
+        .mission-card:hover, .vision-card:hover {
+            transform: translateY(-8px);
+            border-color: #666;
+            box-shadow: 0 25px 40px rgba(0, 0, 0, 0.6);
+            background: #202020;
+        }
+
+        .card-icon {
+            width: 70px;
+            height: 70px;
             background: #2a2a2a;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.8rem;
+            margin-bottom: 1.8rem;
+            font-size: 2.2rem;
             border: 1px solid #444;
-            flex-shrink: 0;
         }
 
-        .contact-text {
-            flex-grow: 1;
-        }
-
-        .contact-text h4 {
-            font-size: 1.1rem;
-            color: #999;
-            margin-bottom: 0.3rem;
-            font-weight: 400;
-        }
-
-        .contact-text a, .contact-text span {
-            font-size: 1.3rem;
+        .mission-card h3, .vision-card h3 {
+            font-size: 2rem;
             color: #fff;
-            text-decoration: none;
-            transition: color 0.3s;
-            font-weight: 500;
-        }
-
-        .contact-text a:hover {
-            color: #ccc;
-        }
-
-        /* Botón de WhatsApp destacado */
-        .whatsapp-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            width: 100%;
-            padding: 1.2rem;
-            margin-top: 2rem;
-            background: #25D366;
-            border: none;
-            border-radius: 50px;
-            color: #fff;
-            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
             font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s;
-            border: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.8rem;
         }
 
-        .whatsapp-button:hover {
-            background: #20ba5a;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+        .mission-card p, .vision-card p {
+            color: #b0b0b0;
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
 
-        /* Mapa minimalista */
-        .map-container {
+        /* ===== VALORES ===== */
+        .values-section {
+            margin: 4rem 0;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .value-item {
             background: #1a1a1a;
             border: 1px solid #333;
-            border-radius: 30px;
-            padding: 1rem;
-            opacity: 0;
-            animation: fadeUp 1s 0.3s forwards;
-        }
-
-        .map-container iframe {
-            width: 100%;
-            height: 450px;
-            border: none;
             border-radius: 20px;
-            filter: grayscale(0.8) invert(0.1);
-            transition: filter 0.3s;
-        }
-
-        .map-container iframe:hover {
-            filter: grayscale(0.5) invert(0);
-        }
-
-        /* Mensaje de disponibilidad */
-        .availability-message {
+            padding: 2rem 1.5rem;
             text-align: center;
-            margin: 3rem 0;
-            padding: 2rem;
-            background: linear-gradient(135deg, #1a1a1a, #202020);
+            transition: all 0.4s ease;
+            opacity: 0;
+            animation: cardAppear 0.8s forwards;
+            animation-delay: calc(0.15s * var(--i));
+        }
+
+        .value-item:hover {
+            transform: translateY(-5px);
+            border-color: #666;
+            background: #202020;
+        }
+
+        .value-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .value-item h4 {
+            font-size: 1.4rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .value-item p {
+            color: #b0b0b0;
+            font-size: 1rem;
+        }
+
+        /* ===== CONTACTO RÁPIDO ===== */
+        .quick-contact {
+            text-align: center;
+            margin: 4rem 0 2rem;
+            padding: 3rem;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size: cover;
             border-radius: 30px;
             border: 1px solid #333;
-            opacity: 0;
-            animation: fadeUp 1s 0.4s forwards;
         }
 
-        .availability-message p {
-            font-size: 1.3rem;
+        .quick-contact h3 {
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .quick-contact p {
+            font-size: 1.2rem;
             color: #ccc;
-            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1rem 2rem;
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 50px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+
+        .contact-btn:hover {
+            background: #2a2a2a;
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
         }
 
         /* ===== FOOTER REDISEÑADO ===== */
@@ -551,15 +607,22 @@
             100% { opacity: 1; transform: translateY(0); }
         }
 
+        @keyframes cardAppear {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
         /* ===== RESPONSIVE ===== */
         @media screen and (max-width: 1024px) {
-            .contact-section {
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+            }
+            .about-intro {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
-            
-            .footer-content {
-                grid-template-columns: 1fr 1fr;
+            .about-image {
+                height: 300px;
             }
         }
 
@@ -625,16 +688,12 @@
                 padding: 2.5rem 1rem;
             }
 
-            .contact-info {
-                padding: 1.8rem;
+            .mission-vision {
+                grid-template-columns: 1fr;
             }
 
-            .contact-text a, .contact-text span {
-                font-size: 1.1rem;
-            }
-
-            .map-container iframe {
-                height: 350px;
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .footer-content {
@@ -665,27 +724,29 @@
                 font-size: 1rem;
             }
 
-            .contact-detail {
-                flex-direction: column;
-                text-align: center;
-                gap: 0.5rem;
-            }
-
-            .contact-icon {
-                margin: 0 auto;
-            }
-
-            .whatsapp-button {
-                font-size: 1.1rem;
-                padding: 1rem;
-            }
-
-            .map-container iframe {
-                height: 300px;
-            }
-
-            .availability-message p {
+            .about-text p {
                 font-size: 1rem;
+            }
+
+            .mission-card, .vision-card {
+                padding: 1.8rem;
+            }
+
+            .mission-card h3, .vision-card h3 {
+                font-size: 1.6rem;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .quick-contact h3 {
+                font-size: 1.6rem;
+            }
+
+            .contact-btn {
+                width: 100%;
+                justify-content: center;
             }
         }
 
@@ -700,7 +761,7 @@
 <body>
     <!-- SPLASH CINEMATOGRÁFICO CON SUBRAYADO -->
     <div class="splash-screen">
-        <div class="splash-title">CONTACTO</div>
+        <div class="splash-title">SOBRE NOSOTROS</div>
     </div>
 
     <!-- CONTENIDO PRINCIPAL -->
@@ -732,64 +793,89 @@
             </nav>
         </header>
 
-        <!-- HERO DE CONTACTO -->
+        <!-- HERO DE SOBRE NOSOTROS -->
         <section class="hero">
             <div class="hero-content">
-                <h1>Contacto</h1>
-                <p>Estamos aquí para ayudarte</p>
+                <h1>Sobre Nosotros</h1>
+                <p>Conoce nuestra historia, misión y compromiso</p>
             </div>
         </section>
 
         <main class="container">
-            <!-- SECCIÓN DE CONTACTO CON MAPA -->
-            <div class="contact-section">
-                <!-- Información de contacto -->
-                <div class="contact-info">
-                    <p>Si necesitas alguno de nuestros servicios o deseas más información, puedes comunicarte con nosotros a través de los siguientes medios:</p>
-                    
-                    <div class="contact-detail">
-                        <div class="contact-icon">📞</div>
-                        <div class="contact-text">
-                            <h4>Teléfono</h4>
-                            <a href="tel:+18297791248">+1 (829) 779-1248</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-detail">
-                        <div class="contact-icon">📍</div>
-                        <div class="contact-text">
-                            <h4>Ubicación</h4>
-                            <span>Cristo Rey, Santo Domingo</span>
-                        </div>
-                    </div>
-
-                    <div class="contact-detail">
-                        <div class="contact-icon">📷</div>
-                        <div class="contact-text">
-                            <h4>Instagram</h4>
-                            <a href="https://instagram.com/inversiones_vd_" target="_blank">@inversiones_vd_</a>
-                        </div>
-                    </div>
-
-                    <!-- Botón de WhatsApp con mensaje predeterminado -->
-                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20comunico%20desde%20la%20p%C3%A1gina%20web%20de%20Inversiones%20V%26D.%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" class="whatsapp-button">
-                        <span>📱</span> Escríbenos por WhatsApp
-                    </a>
+            <!-- INTRODUCCIÓN SOBRE NOSOTROS -->
+            <div class="about-intro">
+                <div class="about-text">
+                    <h2 style="margin-top: 0;">¿Quiénes somos?</h2>
+                    <p>Somos <strong>Inversiones VD</strong>, una empresa dedicada a ofrecer soluciones tecnológicas y servicios profesionales en Santo Domingo. Nuestro objetivo es brindar servicios confiables, eficientes y accesibles para personas y negocios.</p>
+                    <p>Contamos con experiencia en reparación de celulares y computadoras, creación de páginas web, diseño de logos, asesoría financiera, compra y venta de productos y otros servicios digitales.</p>
+                    <p>Trabajamos con compromiso, transparencia y enfoque en la calidad, buscando siempre ofrecer soluciones que realmente ayuden a nuestros clientes.</p>
                 </div>
-
-                <!-- Mapa minimalista de Google Maps -->
-                <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.822219424825!2d-69.924615!3d18.466667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f1107ea5ab%3A0xd5c9f3e7c3b9f3b9!2sCristo%20Rey%2C%20Santo%20Domingo!5e0!3m2!1ses-419!2sdo!4v1620000000000!5m2!1ses-419!2sdo" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                    </iframe>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Equipo de trabajo" onerror="this.style.display='none'; this.parentElement.innerHTML='V&D'; this.parentElement.style.background='#1a1a1a'; this.parentElement.style.color='#fff'; this.parentElement.style.fontSize='3rem'; this.parentElement.style.fontWeight='bold';">
                 </div>
             </div>
 
-            <!-- Mensaje de disponibilidad -->
-            <div class="availability-message">
-                <p>También puedes escribirnos para consultas, cotizaciones o cualquier información sobre nuestros servicios y productos. Estamos disponibles para ayudarte.</p>
+            <!-- MISIÓN Y VISIÓN -->
+            <div class="mission-vision">
+                <div class="mission-card" style="--i:1;">
+                    <div class="card-icon">🎯</div>
+                    <h3>Misión</h3>
+                    <p>Brindar servicios tecnológicos y soluciones profesionales con calidad, responsabilidad y confianza.</p>
+                </div>
+                <div class="vision-card" style="--i:2;">
+                    <div class="card-icon">👁️</div>
+                    <h3>Visión</h3>
+                    <p>Ser una empresa reconocida por ofrecer soluciones confiables e innovadoras para personas y negocios.</p>
+                </div>
+            </div>
+
+            <!-- VALORES -->
+            <section class="values-section">
+                <h2>Nuestros Valores</h2>
+                <div class="values-grid">
+                    <div class="value-item" style="--i:1;">
+                        <div class="value-icon">🤝</div>
+                        <h4>Confianza</h4>
+                        <p>Construimos relaciones duraderas basadas en la honestidad.</p>
+                    </div>
+                    <div class="value-item" style="--i:2;">
+                        <div class="value-icon">✅</div>
+                        <h4>Responsabilidad</h4>
+                        <p>Cumplimos con nuestros compromisos y plazos.</p>
+                    </div>
+                    <div class="value-item" style="--i:3;">
+                        <div class="value-icon">🔍</div>
+                        <h4>Transparencia</h4>
+                        <p>Actuamos con claridad en cada proceso.</p>
+                    </div>
+                    <div class="value-item" style="--i:4;">
+                        <div class="value-icon">⭐</div>
+                        <h4>Calidad</h4>
+                        <p>Buscamos la excelencia en cada servicio.</p>
+                    </div>
+                    <div class="value-item" style="--i:5;">
+                        <div class="value-icon">💪</div>
+                        <h4>Compromiso</h4>
+                        <p>Nos entregamos por completo a cada proyecto.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACTO RÁPIDO -->
+            <div class="quick-contact">
+                <h3>¿Quieres trabajar con nosotros?</h3>
+                <p>Contáctanos y descubre cómo podemos ayudarte</p>
+                <div class="contact-buttons">
+                    <a href="tel:+18297791248" class="contact-btn">
+                        <span>📞</span> Llamar ahora
+                    </a>
+                    <a href="https://wa.me/18297791248" target="_blank" class="contact-btn">
+                        <span>📱</span> WhatsApp
+                    </a>
+                    <a href="https://instagram.com/inversiones_vd_" target="_blank" class="contact-btn">
+                        <span>📷</span> Instagram
+                    </a>
+                </div>
             </div>
         </main>
 
