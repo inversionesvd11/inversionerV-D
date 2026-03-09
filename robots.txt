@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://inversionesvd11.github.io/inversionerV-D/sitemap.xml
