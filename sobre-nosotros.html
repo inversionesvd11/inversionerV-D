@@ -3,26 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-
-    <title>Inversiones V&D</title>
-
-    <meta name="description" content="Compra y venta de dólares, reparación de celulares y computadoras, creación de páginas web, diseño de logos y asesoría financiera en Cristo Rey, Santo Domingo.">
-    <meta name="keywords" content="reparación de celulares Santo Domingo, páginas web República Dominicana, diseño de logos, compra y venta de dólares, servicios tecnológicos">
+    <title>Sobre Nosotros · Inversiones V&D</title>
+    <meta name="description" content="Conoce más sobre Inversiones VD: nuestra misión, visión, valores y servicios tecnológicos en Santo Domingo.">
+    <meta name="keywords" content="sobre nosotros, empresa tecnología, misión, visión, valores, Santo Domingo">
     <meta name="author" content="Inversiones VD">
     <meta name="robots" content="index, follow">
     <meta name="geo.region" content="DO-01">
     <meta name="geo.placename" content="Cristo Rey, Santo Domingo">
-
-    <meta property="og:title" content="Inversiones VD | Soluciones integrales">
-    <meta property="og:description" content="Servicios tecnológicos, reparación de equipos, diseño web y asesoría financiera en Santo Domingo.">
+    <meta property="og:title" content="Sobre Nosotros · Inversiones V&D">
+    <meta property="og:description" content="Conoce nuestra misión, visión, valores y compromiso con la calidad en servicios tecnológicos.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_DO">
-
     <meta name="contact" content="+1 829 779 1248">
     <meta name="instagram" content="@inversiones_vd_">
- 
     <link rel="icon" type="image/x-icon" href="logo.ico">
-  <style>
+    <style>
         /* ===== RESET & GLOBAL ===== */
         * {
             margin: 0;
@@ -134,7 +129,7 @@
             to { opacity: 1; }
         }
 
-        /* ===== HEADER FIJO CON TRANSPARENCIA AUMENTADA ===== */
+        /* ===== HEADER FIJO CON TRANSPARENCIA ===== */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -226,7 +221,7 @@
             transform: translateY(-9px) rotate(-45deg);
         }
 
-        /* Menú de navegación - CON TRANSPARENCIA AUMENTADA */
+        /* Menú de navegación */
         .nav-links {
             display: flex;
             gap: 1.5rem;
@@ -259,20 +254,20 @@
             transform: translateY(-2px);
         }
 
-        /* ===== HERO CON FONDO ===== */
+        /* ===== HERO ESPECÍFICO PARA SOBRE NOSOTROS ===== */
         .hero {
-            min-height: 100vh;
+            min-height: 40vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             position: relative;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('fondo.png');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('fondo.png');
             background-size: cover;
             background-position: center;
-            background-attachment: scroll;
             margin-top: 70px;
             padding: 3rem 1rem;
+            border-bottom: 1px solid #333;
         }
 
         .hero-content {
@@ -283,42 +278,26 @@
         }
 
         .hero h1 {
-            font-size: clamp(2.2rem, 7vw, 5rem);
+            font-size: clamp(2.5rem, 6vw, 4rem);
             font-family: 'Times New Roman', Times, serif;
             font-weight: 700;
             line-height: 1.2;
-            margin-bottom: 1.2rem;
+            margin-bottom: 1rem;
             color: #fff;
             text-shadow: 0 5px 15px rgba(0,0,0,0.5);
         }
 
         .hero p {
-            font-size: clamp(1.1rem, 4vw, 1.6rem);
-            color: #f0f0f0;
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            color: #ccc;
             max-width: 700px;
-            margin: 1.2rem auto;
-            font-family: 'Times New Roman', Times, serif;
+            margin: 0 auto;
             font-style: italic;
-        }
-
-        .experience-badge {
-            display: inline-block;
-            background-color: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 50px;
-            padding: 0.7rem 1.8rem;
-            font-size: 0.95rem;
-            font-weight: 500;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            margin-top: 1.8rem;
-            color: #fff;
-            font-family: 'Times New Roman', Times, serif;
         }
 
         /* ===== CONTAINER ===== */
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 3rem 1.5rem;
             position: relative;
@@ -327,7 +306,7 @@
 
         /* ===== TIPOGRAFÍA ===== */
         h2 {
-            font-size: clamp(2rem, 5vw, 3rem);
+            font-size: clamp(2rem, 5vw, 2.8rem);
             font-family: 'Times New Roman', Times, serif;
             margin-bottom: 2rem;
             position: relative;
@@ -340,7 +319,7 @@
         h2::after {
             content: '';
             position: absolute;
-            bottom: -10px;
+            bottom: -12px;
             left: 0;
             width: 80px;
             height: 3px;
@@ -352,198 +331,205 @@
             width: 150px;
         }
 
-        /* ===== GRID SERVICIOS ===== */
-        .services-grid {
+        /* ===== SECCIÓN SOBRE NOSOTROS MEJORADA ===== */
+        .about-intro {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1.8rem;
-            margin: 3.5rem 0;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+            align-items: center;
         }
 
-        .service-card {
-            background: rgba(25, 25, 25, 0.95);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
+        .about-text {
+            opacity: 0;
+            animation: fadeUp 1s 0.2s forwards;
+        }
+
+        .about-text p {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 350px;
+            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border: 1px solid #333;
-            border-radius: 18px;
-            padding: 1.8rem 1.5rem;
+            opacity: 0;
+            animation: fadeUp 1s 0.3s forwards;
+            overflow: hidden;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+            transition: opacity 0.3s;
+        }
+
+        .about-image:hover img {
+            opacity: 0.8;
+        }
+
+        /* ===== MISIÓN, VISIÓN, VALORES ===== */
+        .mission-vision {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .mission-card, .vision-card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            border-radius: 25px;
+            padding: 2.5rem;
             transition: all 0.4s ease;
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
             opacity: 0;
             animation: cardAppear 0.8s forwards;
-            animation-delay: calc(0.05s * var(--i));
+            animation-delay: calc(0.1s * var(--i));
         }
 
-        .service-card:hover {
-            transform: translateY(-6px);
+        .mission-card:hover, .vision-card:hover {
+            transform: translateY(-8px);
             border-color: #666;
-            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.6);
-            background: rgba(30, 30, 30, 0.98);
+            box-shadow: 0 25px 40px rgba(0, 0, 0, 0.6);
+            background: #202020;
         }
 
         .card-icon {
-            width: 55px;
-            height: 55px;
-            background: #1a1a1a;
-            border-radius: 14px;
+            width: 70px;
+            height: 70px;
+            background: #2a2a2a;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.8rem;
+            font-size: 2.2rem;
+            border: 1px solid #444;
+        }
+
+        .mission-card h3, .vision-card h3 {
             font-size: 2rem;
             color: #fff;
-            border: 1px solid #444;
-            transition: all 0.3s;
-        }
-
-        .service-card:hover .card-icon {
-            background: #2a2a2a;
-            border-color: #777;
-            transform: rotate(2deg);
-        }
-
-        .service-card h3 {
-            font-size: 1.5rem;
-            font-family: 'Times New Roman', Times, serif;
-            margin-bottom: 0.8rem;
-            color: #fff;
-            font-weight: 600;
-        }
-
-        .service-card p {
-            color: #b0b0b0;
-            font-size: 0.98rem;
-            line-height: 1.6;
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-        /* ===== SOBRE NOSOTROS ===== */
-        .about-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2.5rem;
-            padding: 2.5rem;
-            margin: 3.5rem 0;
-            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?auto=compress&cs=tinysrgb&w=600');
-            background-size: cover;
-            background-attachment: scroll;
-            border-radius: 25px;
-        }
-
-        .about-text p {
-            font-size: 1.1rem;
-            color: #e0e0e0;
             margin-bottom: 1.5rem;
-            font-family: 'Times New Roman', Times, serif;
+            font-weight: 600;
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.8rem;
         }
 
-        .about-highlight {
-            font-size: 1.4rem;
-            font-style: italic;
-            border-left: 4px solid #fff;
-            padding-left: 1.3rem;
-            color: #fff;
-            font-weight: 500;
-        }
-
-        .about-stats {
-            background: rgba(0,0,0,0.7);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            border-radius: 20px;
-            padding: 1.8rem;
-            border: 1px solid #333;
-        }
-
-        .about-stats p {
+        .mission-card p, .vision-card p {
+            color: #b0b0b0;
             font-size: 1.1rem;
-            margin: 1rem 0;
-            color: #fff;
-            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.8;
         }
 
-        /* ===== SECCIÓN FAQ ===== */
-        .faq-section {
-            margin: 3.5rem 0;
+        /* ===== VALORES ===== */
+        .values-section {
+            margin: 4rem 0;
         }
 
-        .faq-grid {
+        .values-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.8rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
             margin-top: 2rem;
         }
 
-        .faq-item {
+        .value-item {
             background: #1a1a1a;
             border: 1px solid #333;
-            border-radius: 16px;
-            padding: 1.8rem 1.5rem;
-            transition: all 0.3s;
+            border-radius: 20px;
+            padding: 2rem 1.5rem;
             text-align: center;
+            transition: all 0.4s ease;
+            opacity: 0;
+            animation: cardAppear 0.8s forwards;
+            animation-delay: calc(0.15s * var(--i));
         }
 
-        .faq-item:hover {
+        .value-item:hover {
+            transform: translateY(-5px);
             border-color: #666;
             background: #202020;
-            transform: translateY(-5px);
         }
 
-        .faq-icon {
-            font-size: 2.2rem;
+        .value-icon {
+            font-size: 2.5rem;
             margin-bottom: 1rem;
             color: #fff;
         }
 
-        .faq-item h4 {
-            font-size: 1.3rem;
+        .value-item h4 {
+            font-size: 1.4rem;
             color: #fff;
-            margin-bottom: 0.7rem;
+            margin-bottom: 0.5rem;
             font-weight: 600;
         }
 
-        .faq-item p {
+        .value-item p {
             color: #b0b0b0;
-            font-size: 0.98rem;
-            line-height: 1.6;
+            font-size: 1rem;
         }
 
-        /* ===== CONTACTO ===== */
-        .contact-section {
-            margin: 3.5rem 0;
+        /* ===== CONTACTO RÁPIDO ===== */
+        .quick-contact {
             text-align: center;
+            margin: 4rem 0 2rem;
+            padding: 3rem;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size: cover;
+            border-radius: 30px;
+            border: 1px solid #333;
         }
 
-        .contact-grid {
+        .quick-contact h3 {
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .quick-contact p {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 2rem;
+        }
+
+        .contact-buttons {
             display: flex;
-            gap: 1.2rem;
+            gap: 1.5rem;
             justify-content: center;
             flex-wrap: wrap;
-            margin: 2rem 0;
         }
 
-        .contact-item {
-            display: flex;
+        .contact-btn {
+            display: inline-flex;
             align-items: center;
-            gap: 0.7rem;
-            padding: 0.9rem 1.8rem;
-            background: #1a1a1a;
+            gap: 0.8rem;
+            padding: 1rem 2rem;
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 50px;
-            border: 1px solid #333;
-            font-size: 1rem;
-            transition: all 0.3s;
             color: #fff;
-            font-family: 'Times New Roman', Times, serif;
             text-decoration: none;
-            cursor: pointer;
-            min-width: 180px;
-            justify-content: center;
+            font-size: 1.1rem;
+            transition: all 0.3s;
         }
 
-        .contact-item:hover {
+        .contact-btn:hover {
             background: #2a2a2a;
-            border-color: #777;
-            transform: scale(1.05) translateY(-3px);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
         }
 
         /* ===== FOOTER REDISEÑADO ===== */
@@ -626,14 +612,17 @@
             100% { opacity: 1; transform: translateY(0); }
         }
 
-        /* ===== RESPONSIVE MAXIMO ===== */
+        /* ===== RESPONSIVE ===== */
         @media screen and (max-width: 1024px) {
             .footer-content {
                 grid-template-columns: 1fr 1fr;
             }
-            .about-section {
+            .about-intro {
                 grid-template-columns: 1fr;
-                padding: 2rem;
+                gap: 2rem;
+            }
+            .about-image {
+                height: 300px;
             }
         }
 
@@ -663,7 +652,6 @@
                 gap: 2rem;
                 padding: 2rem;
                 transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-                /* border-left eliminado - ya no hay raya separadora */
                 z-index: 1000;
                 box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
             }
@@ -693,35 +681,24 @@
 
             .hero {
                 margin-top: 65px;
-                min-height: calc(100vh - 65px);
+                min-height: 30vh;
             }
 
             .container {
                 padding: 2.5rem 1rem;
             }
 
-            .services-grid {
+            .mission-vision {
                 grid-template-columns: 1fr;
-                gap: 1.5rem;
             }
 
-            .about-section {
-                padding: 1.5rem;
-                border-radius: 18px;
-            }
-
-            .contact-item {
-                width: 100%;
-                max-width: 300px;
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .footer-content {
                 grid-template-columns: 1fr;
                 gap: 2rem;
-            }
-
-            .footer-bottom {
-                text-align: center;
             }
         }
 
@@ -747,62 +724,29 @@
                 font-size: 1rem;
             }
 
-            .experience-badge {
-                font-size: 0.85rem;
-                padding: 0.6rem 1.2rem;
-            }
-
-            .service-card {
-                padding: 1.5rem;
-            }
-
-            .service-card h3 {
-                font-size: 1.3rem;
-            }
-
             .about-text p {
                 font-size: 1rem;
             }
-            
-            .about-highlight {
-                font-size: 1.2rem;
-            }
-            
-            .about-stats p {
-                font-size: 1rem;
+
+            .mission-card, .vision-card {
+                padding: 1.8rem;
             }
 
-            .contact-item {
-                padding: 0.8rem 1.2rem;
-                font-size: 0.95rem;
-                min-width: auto;
+            .mission-card h3, .vision-card h3 {
+                font-size: 1.6rem;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .quick-contact h3 {
+                font-size: 1.6rem;
+            }
+
+            .contact-btn {
                 width: 100%;
-            }
-
-            .faq-item {
-                padding: 1.5rem;
-            }
-            
-            .faq-item h4 {
-                font-size: 1.2rem;
-            }
-            
-            h2 {
-                font-size: 1.8rem;
-            }
-        }
-
-        @media screen and (max-width: 360px) {
-            .logo-text {
-                font-size: 0.9rem;
-            }
-            
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            
-            .nav-links li a {
-                font-size: 1rem;
+                justify-content: center;
             }
         }
 
@@ -817,7 +761,7 @@
 <body>
     <!-- SPLASH CINEMATOGRÁFICO CON SUBRAYADO -->
     <div class="splash-screen">
-        <div class="splash-title">INVERSIONES V&D</div>
+        <div class="splash-title">SOBRE NOSOTROS</div>
     </div>
 
     <!-- CONTENIDO PRINCIPAL -->
@@ -849,134 +793,90 @@
             </nav>
         </header>
 
-        <!-- HERO CON FONDO DE IMAGEN -->
-        <section id="inicio" class="hero">
+        <!-- HERO DE SOBRE NOSOTROS -->
+        <section class="hero">
             <div class="hero-content">
-                <h1>Tecnología, servicios<br>y soluciones en un solo lugar</h1>
-                <p>Servicios profesionales enfocados en calidad, eficiencia y resultados.</p>
-                <div class="experience-badge">⭐ 1 año de trayectoria · Negocio formal</div>
+                <h1>Sobre Nosotros</h1>
+                <p>Conoce nuestra historia, misión y compromiso</p>
             </div>
         </section>
 
         <main class="container">
-            <!-- SERVICIOS -->
-            <section id="servicios">
-                <h2>Servicios</h2>
-                <div class="services-grid">
-                    <div class="service-card" style="--i:1;">
-                        <div class="card-icon">💵</div>
-                        <h3>Compra y venta de dólares</h3>
-                        <p>Operaciones seguras, tasas competitivas y total transparencia en cada transacción.</p>
-                    </div>
-                    <div class="service-card" style="--i:2;">
-                        <div class="card-icon">🛒</div>
-                        <h3>Compra y venta de productos diversos</h3>
-                        <p>Electrónica, hogar y más. Compra y venta con garantía.</p>
-                    </div>
-                    <div class="service-card" style="--i:3;">
-                        <div class="card-icon">📊</div>
-                        <h3>Asesoría financiera</h3>
-                        <p>Planificación, inversión y estrategias de ahorro.</p>
-                    </div>
-                    <div class="service-card" style="--i:4;">
-                        <div class="card-icon">🔧</div>
-                        <h3>Reparación de celulares, computadoras y electrónicos</h3>
-                        <p>Diagnóstico rápido, repuestos de calidad y garantía.</p>
-                    </div>
-                    <div class="service-card" style="--i:5;">
-                        <div class="card-icon">🌐</div>
-                        <h3>Creación de páginas web</h3>
-                        <p>Diseños modernos, rápidos y adaptados a cualquier dispositivo.</p>
-                    </div>
-                    <div class="service-card" style="--i:6;">
-                        <div class="card-icon">🎨</div>
-                        <h3>Creación de diseños y logos</h3>
-                        <p>Identidad visual profesional para tu marca.</p>
-                    </div>
-                    <div class="service-card" style="--i:7;">
-                        <div class="card-icon">🎬</div>
-                        <h3>Edición y grabación de video</h3>
-                        <p>Producción audiovisual para redes y proyectos comerciales.</p>
-                    </div>
-                    <div class="service-card" style="--i:8;">
-                        <div class="card-icon">📧</div>
-                        <h3>Creación de correos</h3>
-                        <p>Configuración de correos personales y corporativos.</p>
-                    </div>
-                    <div class="service-card" style="--i:9;">
-                        <div class="card-icon">📱</div>
-                        <h3>Creación de contenido</h3>
-                        <p>Contenido estratégico para redes sociales.</p>
-                    </div>
-                    <div class="service-card" style="--i:10;">
-                        <div class="card-icon">💻</div>
-                        <h3>Bases de datos y programas ofimáticos</h3>
-                        <p>Excel, automatización y manejo de datos.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SOBRE NOSOTROS CON FONDO -->
-            <section id="sobre-nosotros" class="about-section">
+            <!-- INTRODUCCIÓN SOBRE NOSOTROS -->
+            <div class="about-intro">
                 <div class="about-text">
-                    <h2 style="margin-top: 0;">Sobre nosotros</h2>
-                    <p>En <strong>Inversiones V&D</strong> creemos en el servicio personalizado con los más altos estándares. Con apenas un año de experiencia, hemos construido una base de clientes satisfechos gracias a nuestra honestidad, calidad y atención al detalle.</p>
-                    <p class="about-highlight">"Formalidad, excelencia y soluciones a tu medida"</p>
+                    <h2 style="margin-top: 0;">¿Quiénes somos?</h2>
+                    <p>Somos <strong>Inversiones VD</strong>, una empresa dedicada a ofrecer soluciones tecnológicas y servicios profesionales en Santo Domingo. Nuestro objetivo es brindar servicios confiables, eficientes y accesibles para personas y negocios.</p>
+                    <p>Contamos con experiencia en reparación de celulares y computadoras, creación de páginas web, diseño de logos, asesoría financiera, compra y venta de productos y otros servicios digitales.</p>
+                    <p>Trabajamos con compromiso, transparencia y enfoque en la calidad, buscando siempre ofrecer soluciones que realmente ayuden a nuestros clientes.</p>
                 </div>
-                <div class="about-stats">
-                    <p>✅ Negocio formalmente constituido</p>
-                    <p>✅ Atención 100% personalizada</p>
-                    <p>✅ Más de 50 clientes satisfechos</p>
-                    <p>✅ Alianza con proveedores de confianza</p>
-                    <p>✅ Servicios con garantía de 1 mes</p>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Equipo de trabajo" onerror="this.style.display='none'; this.parentElement.innerHTML='V&D'; this.parentElement.style.background='#1a1a1a'; this.parentElement.style.color='#fff'; this.parentElement.style.fontSize='3rem'; this.parentElement.style.fontWeight='bold';">
+                </div>
+            </div>
+
+            <!-- MISIÓN Y VISIÓN -->
+            <div class="mission-vision">
+                <div class="mission-card" style="--i:1;">
+                    <div class="card-icon">🎯</div>
+                    <h3>Misión</h3>
+                    <p>Brindar servicios tecnológicos y soluciones profesionales con calidad, responsabilidad y confianza.</p>
+                </div>
+                <div class="vision-card" style="--i:2;">
+                    <div class="card-icon">👁️</div>
+                    <h3>Visión</h3>
+                    <p>Ser una empresa reconocida por ofrecer soluciones confiables e innovadoras para personas y negocios.</p>
+                </div>
+            </div>
+
+            <!-- VALORES -->
+            <section class="values-section">
+                <h2>Nuestros Valores</h2>
+                <div class="values-grid">
+                    <div class="value-item" style="--i:1;">
+                        <div class="value-icon">🤝</div>
+                        <h4>Confianza</h4>
+                        <p>Construimos relaciones duraderas basadas en la honestidad.</p>
+                    </div>
+                    <div class="value-item" style="--i:2;">
+                        <div class="value-icon">✅</div>
+                        <h4>Responsabilidad</h4>
+                        <p>Cumplimos con nuestros compromisos y plazos.</p>
+                    </div>
+                    <div class="value-item" style="--i:3;">
+                        <div class="value-icon">🔍</div>
+                        <h4>Transparencia</h4>
+                        <p>Actuamos con claridad en cada proceso.</p>
+                    </div>
+                    <div class="value-item" style="--i:4;">
+                        <div class="value-icon">⭐</div>
+                        <h4>Calidad</h4>
+                        <p>Buscamos la excelencia en cada servicio.</p>
+                    </div>
+                    <div class="value-item" style="--i:5;">
+                        <div class="value-icon">💪</div>
+                        <h4>Compromiso</h4>
+                        <p>Nos entregamos por completo a cada proyecto.</p>
+                    </div>
                 </div>
             </section>
 
-            <!-- FAQ (PREGUNTAS FRECUENTES) -->
-            <section id="faq" class="faq-section">
-                <h2>Preguntas frecuentes</h2>
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <div class="faq-icon">💬</div>
-                        <h4>Atención personalizada</h4>
-                        <p>Respondemos todas tus dudas vía WhatsApp o en nuestra oficina. Horario flexible.</p>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-icon">🔧</div>
-                        <h4>Garantía en reparaciones</h4>
-                        <p>Todos nuestros servicios de reparación incluyen garantía por escrito de 1 mes.</p>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-icon">📦</div>
-                        <h4>Envíos disponibles</h4>
-                        <p>Realizamos envíos seguros en Santo Domingo y áreas cercanas. Consulta tarifas.</p>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-icon">📅</div>
-                        <h4>Asesorías sin compromiso</h4>
-                        <p>Agenda una cita para asesoría financiera o consultoría sin costo inicial.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- CONTACTO (enlaces directos) -->
-            <section id="contacto" class="contact-section">
-                <h2>Contacto</h2>
-                <div class="contact-grid">
-                    <a href="tel:+18297791248" class="contact-item">
-                        <span>📞</span> +1 (829) 779-1248
+            <!-- CONTACTO RÁPIDO -->
+            <div class="quick-contact">
+                <h3>¿Quieres trabajar con nosotros?</h3>
+                <p>Contáctanos y descubre cómo podemos ayudarte</p>
+                <div class="contact-buttons">
+                    <a href="tel:+18297791248" class="contact-btn">
+                        <span>📞</span> Llamar ahora
                     </a>
-                    <a href="https://maps.google.com/?q=Cristo+Rey+Santo+Domingo" target="_blank" class="contact-item">
-                        <span>📍</span> Cristo Rey, Santo Domingo
-                    </a>
-                    <a href="https://wa.me/18297791248" target="_blank" class="contact-item">
+                    <a href="https://wa.me/18297791248" target="_blank" class="contact-btn">
                         <span>📱</span> WhatsApp
                     </a>
-                    <a href="https://instagram.com/inversiones_vd_" target="_blank" class="contact-item">
-                        <span>📷</span> @inversiones_vd_
+                    <a href="https://instagram.com/inversiones_vd_" target="_blank" class="contact-btn">
+                        <span>📷</span> Instagram
                     </a>
                 </div>
-            </section>
+            </div>
         </main>
 
         <!-- FOOTER REDISEÑADO -->
@@ -989,7 +889,7 @@
                 <div class="footer-col">
                     <h4>Enlaces</h4>
                     <ul>
-                        <li><a href="inicio.html">Inicio</a></li>
+                        <li><a href="index.html">Inicio</a></li>
                         <li><a href="servicios.html">Servicios</a></li>
                         <li><a href="productos-en-venta.html">Productos en venta</a></li>
                         <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
@@ -1012,41 +912,32 @@
         </footer>
     </div>
 
-    <!-- Script para menú hamburguesa - CORREGIDO Y FUNCIONAL -->
+    <!-- Script para menú hamburguesa -->
     <script>
         (function() {
-            // Elementos del DOM
             const menuToggle = document.getElementById('menuToggle');
             const navLinks = document.getElementById('navLinks');
             const body = document.body;
             
-            // Verificar que los elementos existan
-            if (!menuToggle || !navLinks) {
-                console.error('Elementos del menú no encontrados');
-                return;
-            }
+            if (!menuToggle || !navLinks) return;
 
-            // Función para abrir/cerrar menú
             function toggleMenu() {
                 menuToggle.classList.toggle('active');
                 navLinks.classList.toggle('active');
                 body.classList.toggle('menu-open');
             }
 
-            // Función para cerrar menú
             window.cerrarMenu = function() {
                 menuToggle.classList.remove('active');
                 navLinks.classList.remove('active');
                 body.classList.remove('menu-open');
             };
 
-            // Event listener para el botón hamburguesa
             menuToggle.addEventListener('click', function(e) {
                 e.stopPropagation();
                 toggleMenu();
             });
 
-            // Cerrar menú al hacer clic en un enlace
             const links = navLinks.querySelectorAll('a');
             links.forEach(link => {
                 link.addEventListener('click', function() {
@@ -1054,7 +945,6 @@
                 });
             });
 
-            // Cerrar menú al hacer clic fuera
             document.addEventListener('click', function(event) {
                 if (navLinks.classList.contains('active') && 
                     !navLinks.contains(event.target) && 
@@ -1063,12 +953,10 @@
                 }
             });
 
-            // Prevenir que clics dentro del menú lo cierren
             navLinks.addEventListener('click', function(e) {
                 e.stopPropagation();
             });
 
-            // Manejar resize de ventana
             window.addEventListener('resize', function() {
                 if (window.innerWidth > 768) {
                     cerrarMenu();

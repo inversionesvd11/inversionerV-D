@@ -3,26 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-
-    <title>Inversiones V&D</title>
-
-    <meta name="description" content="Compra y venta de dólares, reparación de celulares y computadoras, creación de páginas web, diseño de logos y asesoría financiera en Cristo Rey, Santo Domingo.">
-    <meta name="keywords" content="reparación de celulares Santo Domingo, páginas web República Dominicana, diseño de logos, compra y venta de dólares, servicios tecnológicos">
+    <title>Productos en Venta · Inversiones V&D</title>
+    <meta name="description" content="Explora nuestros productos tecnológicos: memorias USB, cables, cargadores, laptops, repuestos y más en Santo Domingo.">
+    <meta name="keywords" content="productos tecnológicos, memorias USB, cables VGA, cargadores, laptops, repuestos, Santo Domingo">
     <meta name="author" content="Inversiones VD">
     <meta name="robots" content="index, follow">
     <meta name="geo.region" content="DO-01">
     <meta name="geo.placename" content="Cristo Rey, Santo Domingo">
-
-    <meta property="og:title" content="Inversiones VD | Soluciones integrales">
-    <meta property="og:description" content="Servicios tecnológicos, reparación de equipos, diseño web y asesoría financiera en Santo Domingo.">
+    <meta property="og:title" content="Productos en Venta · Inversiones V&D">
+    <meta property="og:description" content="Compra productos tecnológicos con garantía y precios competitivos en Santo Domingo.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es_DO">
-
     <meta name="contact" content="+1 829 779 1248">
     <meta name="instagram" content="@inversiones_vd_">
- 
     <link rel="icon" type="image/x-icon" href="logo.ico">
-  <style>
+    <style>
         /* ===== RESET & GLOBAL ===== */
         * {
             margin: 0;
@@ -134,7 +129,7 @@
             to { opacity: 1; }
         }
 
-        /* ===== HEADER FIJO CON TRANSPARENCIA AUMENTADA ===== */
+        /* ===== HEADER FIJO CON TRANSPARENCIA ===== */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -226,7 +221,7 @@
             transform: translateY(-9px) rotate(-45deg);
         }
 
-        /* Menú de navegación - CON TRANSPARENCIA AUMENTADA */
+        /* Menú de navegación */
         .nav-links {
             display: flex;
             gap: 1.5rem;
@@ -259,20 +254,20 @@
             transform: translateY(-2px);
         }
 
-        /* ===== HERO CON FONDO ===== */
+        /* ===== HERO ESPECÍFICO PARA PRODUCTOS ===== */
         .hero {
-            min-height: 100vh;
+            min-height: 40vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             position: relative;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('fondo.png');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('fondo.png');
             background-size: cover;
             background-position: center;
-            background-attachment: scroll;
             margin-top: 70px;
             padding: 3rem 1rem;
+            border-bottom: 1px solid #333;
         }
 
         .hero-content {
@@ -283,37 +278,21 @@
         }
 
         .hero h1 {
-            font-size: clamp(2.2rem, 7vw, 5rem);
+            font-size: clamp(2.5rem, 6vw, 4rem);
             font-family: 'Times New Roman', Times, serif;
             font-weight: 700;
             line-height: 1.2;
-            margin-bottom: 1.2rem;
+            margin-bottom: 1rem;
             color: #fff;
             text-shadow: 0 5px 15px rgba(0,0,0,0.5);
         }
 
         .hero p {
-            font-size: clamp(1.1rem, 4vw, 1.6rem);
-            color: #f0f0f0;
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            color: #ccc;
             max-width: 700px;
-            margin: 1.2rem auto;
-            font-family: 'Times New Roman', Times, serif;
+            margin: 0 auto;
             font-style: italic;
-        }
-
-        .experience-badge {
-            display: inline-block;
-            background-color: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 50px;
-            padding: 0.7rem 1.8rem;
-            font-size: 0.95rem;
-            font-weight: 500;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            margin-top: 1.8rem;
-            color: #fff;
-            font-family: 'Times New Roman', Times, serif;
         }
 
         /* ===== CONTAINER ===== */
@@ -327,7 +306,7 @@
 
         /* ===== TIPOGRAFÍA ===== */
         h2 {
-            font-size: clamp(2rem, 5vw, 3rem);
+            font-size: clamp(2rem, 5vw, 2.8rem);
             font-family: 'Times New Roman', Times, serif;
             margin-bottom: 2rem;
             position: relative;
@@ -340,7 +319,7 @@
         h2::after {
             content: '';
             position: absolute;
-            bottom: -10px;
+            bottom: -12px;
             left: 0;
             width: 80px;
             height: 3px;
@@ -352,198 +331,164 @@
             width: 150px;
         }
 
-        /* ===== GRID SERVICIOS ===== */
-        .services-grid {
+        /* ===== GRID DE PRODUCTOS ===== */
+        .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1.8rem;
-            margin: 3.5rem 0;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
         }
 
-        .service-card {
-            background: rgba(25, 25, 25, 0.95);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
+        .product-card {
+            background: #1a1a1a;
             border: 1px solid #333;
-            border-radius: 18px;
-            padding: 1.8rem 1.5rem;
+            border-radius: 24px;
+            padding: 1.8rem;
             transition: all 0.4s ease;
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
             opacity: 0;
             animation: cardAppear 0.8s forwards;
-            animation-delay: calc(0.05s * var(--i));
+            animation-delay: calc(0.08s * var(--i));
+            display: flex;
+            flex-direction: column;
         }
 
-        .service-card:hover {
-            transform: translateY(-6px);
+        .product-card:hover {
+            transform: translateY(-8px);
             border-color: #666;
-            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.6);
-            background: rgba(30, 30, 30, 0.98);
+            box-shadow: 0 25px 40px rgba(0, 0, 0, 0.6);
+            background: #202020;
         }
 
-        .card-icon {
-            width: 55px;
-            height: 55px;
-            background: #1a1a1a;
-            border-radius: 14px;
+        /* Espacio para imagen del producto */
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background: #2a2a2a;
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-            color: #fff;
             border: 1px solid #444;
             transition: all 0.3s;
+            overflow: hidden;
         }
 
-        .service-card:hover .card-icon {
-            background: #2a2a2a;
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .product-card:hover .product-image {
             border-color: #777;
-            transform: rotate(2deg);
         }
 
-        .service-card h3 {
-            font-size: 1.5rem;
+        .product-card h3 {
+            font-size: 1.4rem;
             font-family: 'Times New Roman', Times, serif;
             margin-bottom: 0.8rem;
             color: #fff;
             font-weight: 600;
+            line-height: 1.4;
         }
 
-        .service-card p {
+        .product-description {
             color: #b0b0b0;
-            font-size: 0.98rem;
-            line-height: 1.6;
-            font-family: 'Times New Roman', Times, serif;
+            font-size: 1rem;
+            margin-bottom: 1.2rem;
+            flex-grow: 1;
         }
 
-        /* ===== SOBRE NOSOTROS ===== */
-        .about-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2.5rem;
-            padding: 2.5rem;
-            margin: 3.5rem 0;
-            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?auto=compress&cs=tinysrgb&w=600');
-            background-size: cover;
-            background-attachment: scroll;
-            border-radius: 25px;
-        }
-
-        .about-text p {
-            font-size: 1.1rem;
-            color: #e0e0e0;
-            margin-bottom: 1.5rem;
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-        .about-highlight {
-            font-size: 1.4rem;
-            font-style: italic;
-            border-left: 4px solid #fff;
-            padding-left: 1.3rem;
+        .product-price {
+            font-size: 1.8rem;
+            font-weight: 700;
             color: #fff;
-            font-weight: 500;
-        }
-
-        .about-stats {
-            background: rgba(0,0,0,0.7);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            border-radius: 20px;
-            padding: 1.8rem;
-            border: 1px solid #333;
-        }
-
-        .about-stats p {
-            font-size: 1.1rem;
-            margin: 1rem 0;
-            color: #fff;
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-        /* ===== SECCIÓN FAQ ===== */
-        .faq-section {
-            margin: 3.5rem 0;
-        }
-
-        .faq-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.8rem;
-            margin-top: 2rem;
-        }
-
-        .faq-item {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 16px;
-            padding: 1.8rem 1.5rem;
-            transition: all 0.3s;
-            text-align: center;
-        }
-
-        .faq-item:hover {
-            border-color: #666;
-            background: #202020;
-            transform: translateY(-5px);
-        }
-
-        .faq-icon {
-            font-size: 2.2rem;
             margin-bottom: 1rem;
+            border-top: 1px solid #333;
+            padding-top: 1rem;
+        }
+
+        .product-price small {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #999;
+        }
+
+        .product-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
             color: #fff;
-        }
-
-        .faq-item h4 {
-            font-size: 1.3rem;
-            color: #fff;
-            margin-bottom: 0.7rem;
-            font-weight: 600;
-        }
-
-        .faq-item p {
-            color: #b0b0b0;
-            font-size: 0.98rem;
-            line-height: 1.6;
-        }
-
-        /* ===== CONTACTO ===== */
-        .contact-section {
-            margin: 3.5rem 0;
-            text-align: center;
-        }
-
-        .contact-grid {
-            display: flex;
-            gap: 1.2rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 2rem 0;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 0.7rem;
-            padding: 0.9rem 1.8rem;
-            background: #1a1a1a;
-            border-radius: 50px;
-            border: 1px solid #333;
+            text-decoration: none;
             font-size: 1rem;
             transition: all 0.3s;
-            color: #fff;
-            font-family: 'Times New Roman', Times, serif;
-            text-decoration: none;
-            cursor: pointer;
-            min-width: 180px;
-            justify-content: center;
+            text-align: center;
+            margin-top: 0.5rem;
         }
 
-        .contact-item:hover {
+        .product-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* ===== CONTACTO RÁPIDO ===== */
+        .quick-contact {
+            text-align: center;
+            margin: 4rem 0 2rem;
+            padding: 3rem;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('https://images.pexels.com/photos/196655/pexels-photo-196655.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size: cover;
+            border-radius: 30px;
+            border: 1px solid #333;
+        }
+
+        .quick-contact h3 {
+            font-size: 2rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .quick-contact p {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 2rem;
+        }
+
+        .contact-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 1rem 2rem;
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 50px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+
+        .contact-btn:hover {
             background: #2a2a2a;
-            border-color: #777;
-            transform: scale(1.05) translateY(-3px);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
         }
 
         /* ===== FOOTER REDISEÑADO ===== */
@@ -626,14 +571,10 @@
             100% { opacity: 1; transform: translateY(0); }
         }
 
-        /* ===== RESPONSIVE MAXIMO ===== */
+        /* ===== RESPONSIVE ===== */
         @media screen and (max-width: 1024px) {
             .footer-content {
                 grid-template-columns: 1fr 1fr;
-            }
-            .about-section {
-                grid-template-columns: 1fr;
-                padding: 2rem;
             }
         }
 
@@ -663,7 +604,6 @@
                 gap: 2rem;
                 padding: 2rem;
                 transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-                /* border-left eliminado - ya no hay raya separadora */
                 z-index: 1000;
                 box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
             }
@@ -693,35 +633,20 @@
 
             .hero {
                 margin-top: 65px;
-                min-height: calc(100vh - 65px);
+                min-height: 30vh;
             }
 
             .container {
                 padding: 2.5rem 1rem;
             }
 
-            .services-grid {
+            .products-grid {
                 grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-
-            .about-section {
-                padding: 1.5rem;
-                border-radius: 18px;
-            }
-
-            .contact-item {
-                width: 100%;
-                max-width: 300px;
             }
 
             .footer-content {
                 grid-template-columns: 1fr;
                 gap: 2rem;
-            }
-
-            .footer-bottom {
-                text-align: center;
             }
         }
 
@@ -747,62 +672,21 @@
                 font-size: 1rem;
             }
 
-            .experience-badge {
-                font-size: 0.85rem;
-                padding: 0.6rem 1.2rem;
+            .product-image {
+                height: 180px;
             }
 
-            .service-card {
-                padding: 1.5rem;
+            .product-price {
+                font-size: 1.5rem;
             }
 
-            .service-card h3 {
-                font-size: 1.3rem;
+            .quick-contact h3 {
+                font-size: 1.6rem;
             }
 
-            .about-text p {
-                font-size: 1rem;
-            }
-            
-            .about-highlight {
-                font-size: 1.2rem;
-            }
-            
-            .about-stats p {
-                font-size: 1rem;
-            }
-
-            .contact-item {
-                padding: 0.8rem 1.2rem;
-                font-size: 0.95rem;
-                min-width: auto;
+            .contact-btn {
                 width: 100%;
-            }
-
-            .faq-item {
-                padding: 1.5rem;
-            }
-            
-            .faq-item h4 {
-                font-size: 1.2rem;
-            }
-            
-            h2 {
-                font-size: 1.8rem;
-            }
-        }
-
-        @media screen and (max-width: 360px) {
-            .logo-text {
-                font-size: 0.9rem;
-            }
-            
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            
-            .nav-links li a {
-                font-size: 1rem;
+                justify-content: center;
             }
         }
 
@@ -817,7 +701,7 @@
 <body>
     <!-- SPLASH CINEMATOGRÁFICO CON SUBRAYADO -->
     <div class="splash-screen">
-        <div class="splash-title">INVERSIONES V&D</div>
+        <div class="splash-title">PRODUCTOS</div>
     </div>
 
     <!-- CONTENIDO PRINCIPAL -->
@@ -839,7 +723,7 @@
                 </div>
 
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="inicio.html">Inicio</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="productos-en-venta.html">Productos en venta</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
@@ -849,134 +733,188 @@
             </nav>
         </header>
 
-        <!-- HERO CON FONDO DE IMAGEN -->
-        <section id="inicio" class="hero">
+        <!-- HERO DE PRODUCTOS -->
+        <section class="hero">
             <div class="hero-content">
-                <h1>Tecnología, servicios<br>y soluciones en un solo lugar</h1>
-                <p>Servicios profesionales enfocados en calidad, eficiencia y resultados.</p>
-                <div class="experience-badge">⭐ 1 año de trayectoria · Negocio formal</div>
+                <h1>Productos en Venta</h1>
+                <p>Tecnología, accesorios y repuestos con los mejores precios</p>
             </div>
         </section>
 
         <main class="container">
-            <!-- SERVICIOS -->
-            <section id="servicios">
-                <h2>Servicios</h2>
-                <div class="services-grid">
-                    <div class="service-card" style="--i:1;">
-                        <div class="card-icon">💵</div>
-                        <h3>Compra y venta de dólares</h3>
-                        <p>Operaciones seguras, tasas competitivas y total transparencia en cada transacción.</p>
+            <!-- GRID DE PRODUCTOS CON IMÁGENES DESDE CARPETA FOTOS-PRODUCTOS -->
+            <div class="products-grid">
+                <!-- Producto 1: Memorias SanDisk USB 3.0 -->
+                <div class="product-card" style="--i:1;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen1-memoria-sandisk.jpg" alt="Memoria SanDisk USB 3.0" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>💾</span><p>Imagen no disponible</p></div>';">
                     </div>
-                    <div class="service-card" style="--i:2;">
-                        <div class="card-icon">🛒</div>
-                        <h3>Compra y venta de productos diversos</h3>
-                        <p>Electrónica, hogar y más. Compra y venta con garantía.</p>
-                    </div>
-                    <div class="service-card" style="--i:3;">
-                        <div class="card-icon">📊</div>
-                        <h3>Asesoría financiera</h3>
-                        <p>Planificación, inversión y estrategias de ahorro.</p>
-                    </div>
-                    <div class="service-card" style="--i:4;">
-                        <div class="card-icon">🔧</div>
-                        <h3>Reparación de celulares, computadoras y electrónicos</h3>
-                        <p>Diagnóstico rápido, repuestos de calidad y garantía.</p>
-                    </div>
-                    <div class="service-card" style="--i:5;">
-                        <div class="card-icon">🌐</div>
-                        <h3>Creación de páginas web</h3>
-                        <p>Diseños modernos, rápidos y adaptados a cualquier dispositivo.</p>
-                    </div>
-                    <div class="service-card" style="--i:6;">
-                        <div class="card-icon">🎨</div>
-                        <h3>Creación de diseños y logos</h3>
-                        <p>Identidad visual profesional para tu marca.</p>
-                    </div>
-                    <div class="service-card" style="--i:7;">
-                        <div class="card-icon">🎬</div>
-                        <h3>Edición y grabación de video</h3>
-                        <p>Producción audiovisual para redes y proyectos comerciales.</p>
-                    </div>
-                    <div class="service-card" style="--i:8;">
-                        <div class="card-icon">📧</div>
-                        <h3>Creación de correos</h3>
-                        <p>Configuración de correos personales y corporativos.</p>
-                    </div>
-                    <div class="service-card" style="--i:9;">
-                        <div class="card-icon">📱</div>
-                        <h3>Creación de contenido</h3>
-                        <p>Contenido estratégico para redes sociales.</p>
-                    </div>
-                    <div class="service-card" style="--i:10;">
-                        <div class="card-icon">💻</div>
-                        <h3>Bases de datos y programas ofimáticos</h3>
-                        <p>Excel, automatización y manejo de datos.</p>
-                    </div>
+                    <h3>Memorias SanDisk USB 3.0</h3>
+                    <div class="product-description">Alta velocidad, transmisión rápida de datos, ideal para archivos pesados.</div>
+                    <div class="product-price">Consultar <small>precio</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20la%20Memoria%20SanDisk%20USB%203.0" target="_blank" class="product-btn">Consultar disponibilidad</a>
                 </div>
-            </section>
 
-            <!-- SOBRE NOSOTROS CON FONDO -->
-            <section id="sobre-nosotros" class="about-section">
-                <div class="about-text">
-                    <h2 style="margin-top: 0;">Sobre nosotros</h2>
-                    <p>En <strong>Inversiones V&D</strong> creemos en el servicio personalizado con los más altos estándares. Con apenas un año de experiencia, hemos construido una base de clientes satisfechos gracias a nuestra honestidad, calidad y atención al detalle.</p>
-                    <p class="about-highlight">"Formalidad, excelencia y soluciones a tu medida"</p>
+                <!-- Producto 2: Control de tv claro -->
+                <div class="product-card" style="--i:2;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen2-control-claro.jpg" alt="Control de tv claro" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>📺</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Control de tv claro</h3>
+                    <div class="product-description">Control remoto original para televisores Claro, funcionamiento garantizado.</div>
+                    <div class="product-price">RD$400 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20el%20Control%20de%20tv%20claro%20por%20RD%24400" target="_blank" class="product-btn">Comprar ahora</a>
                 </div>
-                <div class="about-stats">
-                    <p>✅ Negocio formalmente constituido</p>
-                    <p>✅ Atención 100% personalizada</p>
-                    <p>✅ Más de 50 clientes satisfechos</p>
-                    <p>✅ Alianza con proveedores de confianza</p>
-                    <p>✅ Servicios con garantía de 1 mes</p>
-                </div>
-            </section>
 
-            <!-- FAQ (PREGUNTAS FRECUENTES) -->
-            <section id="faq" class="faq-section">
-                <h2>Preguntas frecuentes</h2>
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <div class="faq-icon">💬</div>
-                        <h4>Atención personalizada</h4>
-                        <p>Respondemos todas tus dudas vía WhatsApp o en nuestra oficina. Horario flexible.</p>
+                <!-- Producto 3: Tarjeta de red laptop -->
+                <div class="product-card" style="--i:3;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen3-tarjeta-red-laptop.jpg" alt="Tarjeta de red laptop" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>📶</span><p>Imagen no disponible</p></div>';">
                     </div>
-                    <div class="faq-item">
-                        <div class="faq-icon">🔧</div>
-                        <h4>Garantía en reparaciones</h4>
-                        <p>Todos nuestros servicios de reparación incluyen garantía por escrito de 1 mes.</p>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-icon">📦</div>
-                        <h4>Envíos disponibles</h4>
-                        <p>Realizamos envíos seguros en Santo Domingo y áreas cercanas. Consulta tarifas.</p>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-icon">📅</div>
-                        <h4>Asesorías sin compromiso</h4>
-                        <p>Agenda una cita para asesoría financiera o consultoría sin costo inicial.</p>
-                    </div>
+                    <h3>Tarjeta de red laptop</h3>
+                    <div class="product-description">Soporta 5G, ideal para mejorar la conectividad de tu laptop. 150 c/u.</div>
+                    <div class="product-price">RD$150 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20la%20Tarjeta%20de%20red%20laptop%20por%20RD%24150" target="_blank" class="product-btn">Comprar ahora</a>
                 </div>
-            </section>
 
-            <!-- CONTACTO (enlaces directos) -->
-            <section id="contacto" class="contact-section">
-                <h2>Contacto</h2>
-                <div class="contact-grid">
-                    <a href="tel:+18297791248" class="contact-item">
-                        <span>📞</span> +1 (829) 779-1248
+                <!-- Producto 4: Cabezita de cargador -->
+                <div class="product-card" style="--i:4;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen4-cargadores-cabezita.jpg" alt="Cabezita de cargador" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>🔌</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Cabezita de cargador</h3>
+                    <div class="product-description">Adaptador de corriente para cargador, compatible con varios dispositivos. 100 c/u.</div>
+                    <div class="product-price">RD$100 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20la%20Cabezita%20de%20cargador%20por%20RD%24100" target="_blank" class="product-btn">Comprar ahora</a>
+                </div>
+
+                <!-- Producto 5: Cable VGA -->
+                <div class="product-card" style="--i:5;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen5-cable-vga.jpg" alt="Cable VGA" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>🖥️</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Cable VGA</h3>
+                    <div class="product-description">Cable de video para conectar monitor a computadora, imagen nítida.</div>
+                    <div class="product-price">RD$150 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20el%20Cable%20VGA%20por%20RD%24150" target="_blank" class="product-btn">Comprar ahora</a>
+                </div>
+
+                <!-- Producto 6: Cable de poder pc -->
+                <div class="product-card" style="--i:6;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen6-cable-pc.jpg" alt="Cable de poder pc" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>⚡</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Cable de poder pc</h3>
+                    <div class="product-description">Cable de alimentación para computadora de escritorio, estándar.</div>
+                    <div class="product-price">RD$150 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20el%20Cable%20de%20poder%20pc%20por%20RD%24150" target="_blank" class="product-btn">Comprar ahora</a>
+                </div>
+
+                <!-- Producto 7: Transmisor FM para carro -->
+                <div class="product-card" style="--i:7;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen7-transmisor.jpg" alt="Transmisor FM para carro" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>🚗</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Transmisor FM para carro</h3>
+                    <div class="product-description">Escucha música desde tu USB o tarjeta en el auto, manos libres.</div>
+                    <div class="product-price">RD$250 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20el%20Transmisor%20FM%20para%20carro%20por%20RD%24250" target="_blank" class="product-btn">Comprar ahora</a>
+                </div>
+
+                <!-- Producto 8: Cable poder ps4 -->
+                <div class="product-card" style="--i:8;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen8-cable-de-poder-ps4.jpg" alt="Cable poder ps4" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>🎮</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Cable poder ps4</h3>
+                    <div class="product-description">Cable de alimentación para PlayStation 4, original y seguro.</div>
+                    <div class="product-price">RD$150 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20el%20Cable%20poder%20ps4%20por%20RD%24150" target="_blank" class="product-btn">Comprar ahora</a>
+                </div>
+
+                <!-- Producto 9: Cargador reloj inteligente smartwatch -->
+                <div class="product-card" style="--i:9;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen9-cargador-smartwacth.jpg" alt="Cargador smartwatch" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>⌚</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Cargador reloj inteligente smartwatch</h3>
+                    <div class="product-description">Cargador magnético para smartwatch, compatible con varias marcas.</div>
+                    <div class="product-price">RD$200 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20el%20Cargador%20reloj%20inteligente%20smartwatch%20por%20RD%24200" target="_blank" class="product-btn">Comprar ahora</a>
+                </div>
+
+                <!-- Producto 10: Mouse pad laptop del gobierno EASY TOUCH -->
+                <div class="product-card" style="--i:10;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen10-mouse-modulo.jpg" alt="Mouse pad EASY TOUCH" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>🖱️</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Mouse pad laptop EASY TOUCH</h3>
+                    <div class="product-description">Mouse pad oficial del gobierno, calidad superior. 250 c/u.</div>
+                    <div class="product-price">RD$250 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20el%20Mouse%20pad%20laptop%20EASY%20TOUCH%20por%20RD%24250" target="_blank" class="product-btn">Comprar ahora</a>
+                </div>
+
+                <!-- Producto 11: Pila de bios Laptop armadas -->
+                <div class="product-card" style="--i:11;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen11-pila-bios.jpg" alt="Pila de bios laptop" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>🔋</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Pila de bios Laptop armadas</h3>
+                    <div class="product-description">Batería para BIOS de laptop, lista para usar. 150 c/u.</div>
+                    <div class="product-price">RD$150 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20la%20Pila%20de%20bios%20Laptop%20armadas%20por%20RD%24150" target="_blank" class="product-btn">Comprar ahora</a>
+                </div>
+
+                <!-- Producto 12: M2 sata 128gb -->
+                <div class="product-card" style="--i:12;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen12-m2-sata.jpg" alt="M2 sata 128gb" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>💽</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>M2 sata 128gb</h3>
+                    <div class="product-description">Disco sólido M2 SATA, nítido, poco uso, ideal para mejorar rendimiento.</div>
+                    <div class="product-price">RD$500 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20el%20M2%20sata%20128gb%20por%20RD%24500" target="_blank" class="product-btn">Comprar ahora</a>
+                </div>
+
+                <!-- Producto 13: Acer para piezas o reparar -->
+                <div class="product-card" style="--i:13;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen13-laptop-acer.jpg" alt="Laptop Acer para piezas" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>💻</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Acer para piezas o reparar</h3>
+                    <div class="product-description">Sin RAM ni disco, teclado dañado, resto funcional. Pantalla 15.6 pulgadas. Ideal para reparar o repuestos.</div>
+                    <div class="product-price">RD$2,000 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20la%20Acer%20para%20piezas%20por%20RD%242000" target="_blank" class="product-btn">Comprar ahora</a>
+                </div>
+
+                <!-- Producto 14: Motherboard laptop del gobierno Placa madre -->
+                <div class="product-card" style="--i:14;">
+                    <div class="product-image">
+                        <img src="FOTOS-PRODUCTOS/imagen14-laptop-motherboard-gobierno.jpg" alt="Motherboard laptop gobierno" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'display:flex; flex-direction:column; align-items:center; gap:0.5rem; color:#888\'><span style=\'font-size:3rem; opacity:0.5\'>🔧</span><p>Imagen no disponible</p></div>';">
+                    </div>
+                    <h3>Motherboard laptop del gobierno</h3>
+                    <div class="product-description">Placa madre para laptop del gobierno, funcional, lista para usar.</div>
+                    <div class="product-price">RD$500 <small>c/u</small></div>
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20me%20interesa%20la%20Motherboard%20laptop%20del%20gobierno%20por%20RD%24500" target="_blank" class="product-btn">Comprar ahora</a>
+                </div>
+            </div>
+
+            <!-- CONTACTO RÁPIDO -->
+            <div class="quick-contact">
+                <h3>¿No encuentras lo que buscas?</h3>
+                <p>Pregunta por disponibilidad y otros productos que tenemos para ti</p>
+                <div class="contact-buttons">
+                    <a href="tel:+18297791248" class="contact-btn">
+                        <span>📞</span> Llamar ahora
                     </a>
-                    <a href="https://maps.google.com/?q=Cristo+Rey+Santo+Domingo" target="_blank" class="contact-item">
-                        <span>📍</span> Cristo Rey, Santo Domingo
-                    </a>
-                    <a href="https://wa.me/18297791248" target="_blank" class="contact-item">
+                    <a href="https://wa.me/18297791248?text=Hola%2C%20quiero%20consultar%20por%20los%20productos%20que%20tienen%20disponibles" target="_blank" class="contact-btn">
                         <span>📱</span> WhatsApp
                     </a>
-                    <a href="https://instagram.com/inversiones_vd_" target="_blank" class="contact-item">
-                        <span>📷</span> @inversiones_vd_
+                    <a href="https://instagram.com/inversiones_vd_" target="_blank" class="contact-btn">
+                        <span>📷</span> Instagram
                     </a>
                 </div>
-            </section>
+            </div>
         </main>
 
         <!-- FOOTER REDISEÑADO -->
@@ -1007,46 +945,37 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <span>© 2026 Inversiones V&D · 1 año de experiencia</span>
+                <span>© 2025 Inversiones V&D · 1 año de experiencia</span>
             </div>
         </footer>
     </div>
 
-    <!-- Script para menú hamburguesa - CORREGIDO Y FUNCIONAL -->
+    <!-- Script para menú hamburguesa -->
     <script>
         (function() {
-            // Elementos del DOM
             const menuToggle = document.getElementById('menuToggle');
             const navLinks = document.getElementById('navLinks');
             const body = document.body;
             
-            // Verificar que los elementos existan
-            if (!menuToggle || !navLinks) {
-                console.error('Elementos del menú no encontrados');
-                return;
-            }
+            if (!menuToggle || !navLinks) return;
 
-            // Función para abrir/cerrar menú
             function toggleMenu() {
                 menuToggle.classList.toggle('active');
                 navLinks.classList.toggle('active');
                 body.classList.toggle('menu-open');
             }
 
-            // Función para cerrar menú
             window.cerrarMenu = function() {
                 menuToggle.classList.remove('active');
                 navLinks.classList.remove('active');
                 body.classList.remove('menu-open');
             };
 
-            // Event listener para el botón hamburguesa
             menuToggle.addEventListener('click', function(e) {
                 e.stopPropagation();
                 toggleMenu();
             });
 
-            // Cerrar menú al hacer clic en un enlace
             const links = navLinks.querySelectorAll('a');
             links.forEach(link => {
                 link.addEventListener('click', function() {
@@ -1054,7 +983,6 @@
                 });
             });
 
-            // Cerrar menú al hacer clic fuera
             document.addEventListener('click', function(event) {
                 if (navLinks.classList.contains('active') && 
                     !navLinks.contains(event.target) && 
@@ -1063,12 +991,10 @@
                 }
             });
 
-            // Prevenir que clics dentro del menú lo cierren
             navLinks.addEventListener('click', function(e) {
                 e.stopPropagation();
             });
 
-            // Manejar resize de ventana
             window.addEventListener('resize', function() {
                 if (window.innerWidth > 768) {
                     cerrarMenu();
